@@ -8,6 +8,17 @@ In a website project with Python code cells where I've enabled caching (using Ju
 I want to be able to control where Jupyter Cache writes its files, but their documented method
 (setting the `JUPYTERCACHE` env var) doesn't seem to work.
 
+Website page structure:
+
+```
+📂 /
+├── 📄 index.qmd (contains Python cells)
+├── 📄 about.qmd
+└── 📂 examples
+    └── 📄 index.qmd (contains Python cells)
+└── ...
+```
+
 ## Setup
 
 Install quarto (v1.6.40) and Python (probably any recent v3 is fine, I'm using v3.11).
