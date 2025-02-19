@@ -1,0 +1,27 @@
+---
+title: "quarto-jupyter-cache-issue-repro"
+execute:
+  cache: true
+---
+
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+```{python}
+import matplotlib.pyplot as plt
+import numpy as np
+
+t = np.arange(0.0, 2.0, 0.01)
+s = 1 + np.sin(2 * np.pi * t)
+
+fig, ax = plt.subplots()
+ax.plot(t, s)
+ax.set(
+  xlabel='time (s)',
+  ylabel='voltage (mV)',
+  title="mathematics is a sin",
+)
+ax.grid()
+plt.show()
+```
